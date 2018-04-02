@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AddBlog AddBlog should be rendered properly 1`] = `
+<form>
+  <div
+    class="input-group"
+  >
+    <div
+      class="input-group-prepend"
+    >
+      <span
+        class="input-group-text"
+        id=""
+      >
+        Add blog
+      </span>
+    </div>
+    <input
+      class="form-control"
+      name="title"
+      placeholder="Title"
+      type="text"
+    />
+    <input
+      class="form-control"
+      name="author"
+      placeholder="Author"
+      type="text"
+    />
+    <input
+      class="form-control"
+      name="body"
+      placeholder="Message"
+      type="text"
+    />
+    <button
+      class="btn btn-outline-secondary"
+      type="submit"
+    >
+      Add blog
+    </button>
+  </div>
+</form>
+`;

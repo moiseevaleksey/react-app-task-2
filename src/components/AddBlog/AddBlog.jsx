@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import convertFormDataToJson from 'components/utils/utils';
-import http from 'config/http';
+import convertFormDataToJson from '../utils/utils';
+import http from '../../config/http';
 import { API_BLOGS } from '../../config/api';
 
 export default class AddBlog extends React.Component {
