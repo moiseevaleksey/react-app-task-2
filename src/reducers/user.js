@@ -1,4 +1,4 @@
-import { CLEAR_USER, SET_USER } from "actions/user";
+import { CLEAR_USER, SET_USER } from "../actions/user";
 
 const initialState = {};
 

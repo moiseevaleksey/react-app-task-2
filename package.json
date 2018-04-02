@@ -4,6 +4,7 @@
   "description": "FrontCamp 3",
   "scripts": {
     "test": "jest",
+    "test:coverage": "jest --coverage",
     "test:watch": "jest --watch",
     "start": "node dist/server.js",
     "server:dev": "webpack --env dev && node dist/server.js",

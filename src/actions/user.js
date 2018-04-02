@@ -5,11 +5,11 @@ import { ajaxRequestStart, ajaxRequestEnd } from './app';
 export const CLEAR_USER = 'CLEAR_USER';
 export const SET_USER = 'SET_USER';
 
-export const clearUser = () => ({
-  type: CLEAR_USER,
-});
+export const clearUser = () => {
+  return { type: CLEAR_USER };
+};
 
-export const setUser = user => ({
+export const setUser = (user) => ({
   type: SET_USER,
   user,
 });
@@ -21,8 +21,9 @@ export const checkUser = () => (dispatch) => {
     .then(() => dispatch(ajaxRequestEnd));
 };
 
-export const loginUser = credentials => (dispatch) => {
+export const loginUser = (credentials, done) => (dispatch) => {
   dispatch(ajaxRequestStart);
+  done();
   http.post(API_LOGIN, credentials)
     .then(user => dispatch(setUser(user)))
     .then(() => dispatch(ajaxRequestEnd));
