@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { NavLink } from 'react-router-dom';
-import { logoutUser } from 'actions/user';
+import { logoutUser } from '../../actions/user';
 
 const Header = ({ user, logoutUser }) => (
   <header className="">

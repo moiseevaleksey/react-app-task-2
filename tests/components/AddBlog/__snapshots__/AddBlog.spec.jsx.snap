@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`AddBlog AddBlog should be rendered properly 1`] = `
+exports[`AddBlog AddBlog should be rendered with props 1`] = `
 <form>
   <div
     class="input-group"

@@ -1,7 +1,7 @@
 import React from 'react';
-import BlogItem from 'components/BlogItem/BlogItem';
-import AddBlog from 'components/AddBlog/AddBlog';
-import http from 'config/http';
+import BlogItem from '../BlogItem/BlogItem';
+import AddBlog from '../AddBlog/AddBlog';
+import http from '../../config/http';
 import { API_BLOGS } from '../../config/api';
 
 export default class BlogList extends React.Component {

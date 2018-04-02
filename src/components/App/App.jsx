@@ -5,13 +5,13 @@ import PropTypes from 'prop-types';
 
 import style from 'stylesheet/main.scss';
 
-import Header from 'components/Header/Header';
-import Main from 'components/Main/Main';
-import Login from 'components/Login/Login';
-import Registration from 'components/Registration/Registration';
-import { checkUser } from 'actions/user';
+import Header from '../Header/Header';
+import Main from '../Main/Main';
+import Login from '../Login/Login';
+import Registration from '../Registration/Registration';
+import { checkUser } from '../../actions/user';
 
-class App extends React.Component {
+export class App extends React.Component {
   static propTypes = {
     checkUser: PropTypes.func,
   };

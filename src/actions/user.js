@@ -1,4 +1,4 @@
-import http from 'config/http';
+import http from '../config/http';
 import { API_LOGIN, API_LOGOUT, API_CHECK_USER, API_REGISTER } from '../config/api';
 import { ajaxRequestStart, ajaxRequestEnd } from './app';
 

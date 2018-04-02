@@ -8,7 +8,7 @@ describe('AddBlog', () => {
   let wrapper;
   const getBlogs = () => {};
 
-  it('AddBlog should be rendered properly', () => {
+  it('AddBlog should be rendered with props', () => {
     wrapper = render(<AddBlog getBlogs={getBlogs}/>);
     expect(toJson(wrapper)).toMatchSnapshot();
   });

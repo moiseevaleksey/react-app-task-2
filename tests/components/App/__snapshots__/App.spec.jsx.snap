@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App App should be rendered with props 1`] = `
+<div
+  className="app"
+>
+  <Connect(Header) />
+  <Switch>
+    <Route
+      component={[Function]}
+      exact={true}
+      path="/"
+    />
+    <Route
+      component={[Function]}
+      path="/login"
+    />
+    <Route
+      component={[Function]}
+      path="/register"
+    />
+  </Switch>
+</div>
+`;
