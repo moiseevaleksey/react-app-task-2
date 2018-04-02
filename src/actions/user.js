@@ -21,9 +21,8 @@ export const checkUser = () => (dispatch) => {
     .then(() => dispatch(ajaxRequestEnd));
 };
 
-export const loginUser = (credentials, done) => (dispatch) => {
+export const loginUser = (credentials) => (dispatch) => {
   dispatch(ajaxRequestStart);
-  done();
   http.post(API_LOGIN, credentials)
     .then(user => dispatch(setUser(user)))
     .then(() => dispatch(ajaxRequestEnd));

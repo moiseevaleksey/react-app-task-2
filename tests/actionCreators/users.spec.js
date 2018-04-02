@@ -8,7 +8,7 @@ describe('user actionCreator', () => {
   });
   it('should handle set user', () => {
     const userMocked = {
-      id: 1,
+      id: Date.now(),
       name: 'Kolya'
     };
     expect(setUser(userMocked)).toEqual({
