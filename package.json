@@ -3,9 +3,20 @@
   "version": "0.0.1",
   "description": "FrontCamp 3",
   "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
     "start": "node dist/server.js",
     "server:dev": "webpack --env dev && node dist/server.js",
     "server:prod": "webpack --env prod && node dist/server.js"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.scss$": "identity-obj-proxy"
+    },
+    "setupFiles": [
+      "<rootDir>/tests/shim.js",
+      "<rootDir>/tests/setup.js"
+    ]
   },
   "author": "Aliaksei Moiseev",
   "license": "MIT",
@@ -21,6 +32,9 @@
     "babel-preset-react": "6.24.1",
     "clean-webpack-plugin": "0.1.17",
     "css-loader": "0.28.9",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme-to-json": "^3.3.3",
     "eslint": "4.16.0",
     "eslint-config-airbnb": "16.1.0",
     "eslint-import-resolver-webpack": "0.8.4",
@@ -29,6 +43,7 @@
     "eslint-plugin-react": "7.6.0",
     "extract-text-webpack-plugin": "3.0.2",
     "file-loader": "1.1.6",
+    "jest": "^22.4.3",
     "node-sass": "4.7.2",
     "postcss-loader": "2.0.10",
     "sass-loader": "6.0.6",
